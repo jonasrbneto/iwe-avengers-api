@@ -8,7 +8,7 @@ Scenario: Get Avenger by Id
 Given path 'avengers', 'aaaa-bbbb-cccc-dddd'
 When method get
 Then status 200
-And match response == {id: '#string', name: '#string', secretIdentify: ''}
+And match response == {id: '#string', name: '#string', secretIdentity: '#string'}
 
 Scenario: Creates a new Avenger
 
