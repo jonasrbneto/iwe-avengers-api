@@ -3,39 +3,28 @@ package com.iwe.avengers.dao;
 import java.util.HashMap;
 import java.util.Map;
 
+import com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBMapper;
 import com.iwe.avenger.dynamodb.entity.Avenger;
+import com.iwe.avenger.repository.DynamoDBManager;
 
 public class AvengerDAO {
 
-	private Map<String, Avenger> mapper = new HashMap<String, Avenger>();
+	private static final DynamoDBMapper mapper = DynamoDBManager.mapper();
 
 	public AvengerDAO() {
-
-		mapper.put("aaaa-bbbb-cccc-dddd", new Avenger("aaaa-bbbb-cccc-dddd", "Captain America", "Steve Rogers"));
-
-		mapper.put("aaaa-aaaa-aaaa-aaaa", new Avenger("aaaa-aaaa-aaaa-aaaa", "Hulk", "Bruce Banner"));
-
-		mapper.put("bbbb-bbbb-bbbb-bbbb", new Avenger("bbbb-bbbb-bbbb-bbbb", "Viuva Negra", "Natasha Romanova"));
-
 	}
 
 	public Avenger search(String id) {
-		return mapper.get(id);
+		return mapper.load(Avenger.class, id);
 	}
 
-	public Avenger update(Avenger avenger) {
-		return mapper.replace(avenger.getId(), avenger);
-	}
-
-	public Avenger create(Avenger avenger) {
-		String id = "issoFoiGerado";
-		avenger.setId(id);
-		mapper.put(id, avenger);
+	public Avenger save(Avenger avenger) {
+		mapper.save(avenger);
 		return avenger;
 	}
 
 	public void remove(Avenger avenger) {
-		mapper.remove(avenger.getId());
+		mapper.delete(avenger);
 	}
 
 }
