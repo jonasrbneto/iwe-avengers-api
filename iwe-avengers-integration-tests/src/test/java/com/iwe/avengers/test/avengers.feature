@@ -12,13 +12,15 @@ Feature: Perform integrated tests on the Avengers registration API
       """
     * def token = call getToken
 
-  Scenario: Should return non-authenticated access
-    Given path 'avengers', 'anyId'
+  Scenario: Should return non-authorized access
+    Given path 'avengers', 'anyid'
+    And header Authorization = 'Bearer ' + token + 'a'
     When method get
-    Then status 401
+    Then status 403
 
   Scenario: Creates a new Avenger
     Given path 'avengers'
+    And header Authorization = 'Bearer ' + token
     And request {name:'Captain America', secretIdentity:'Steve Rogers'}
     When method post
     Then status 201
@@ -32,6 +34,7 @@ Feature: Perform integrated tests on the Avengers registration API
 
   Scenario: Creates a new Avenger without the requied data
     Given path 'avengers'
+    And header Authorization = 'Bearer ' + token
     And request {name: 'Captain America'}
     When method post
     Then status 400
@@ -75,6 +78,7 @@ Feature: Perform integrated tests on the Avengers registration API
 
   Scenario: Update a Avenger without name
     Given path 'avengers', 'aaaa-bbbb-cccc-dddd'
+    And header Authorization = 'Bearer ' + token
     And request {name:'Hulk'}
     When method put
     Then status 400

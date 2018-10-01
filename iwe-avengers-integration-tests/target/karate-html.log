@@ -1,26 +1,28 @@
-22:20:45.731 karate.env system property was: null 
-22:20:47.557 request:
-1 > GET https://udsnzlijn8.execute-api.us-east-1.amazonaws.com/dev/avengers/anyId
+20:12:31.590 karate.env system property was: null 
+20:12:33.401 request:
+1 > GET https://udsnzlijn8.execute-api.us-east-1.amazonaws.com/dev/avengers/anyid
 1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Bearer eyJraWQiOiJKbXgrSTI4SlVDOFJNS2NKY3ZROFl0Vm9Ld0NcLzE5ZzNlY05lM3hVSHR3OD0iLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiI5YmZmMjA5NS1kMjczLTRjYTktYjUwMS0yMDJhYmY1YmNjM2EiLCJhdWQiOiI3ZHF2ZG9pcmM0b2FmYzJ1ZGRqYjY0bDdhZSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJldmVudF9pZCI6Ijc5ZjhmMTAxLWM1Y2YtMTFlOC1hNjhkLWM5ZThmMGExNjBhZiIsInRva2VuX3VzZSI6ImlkIiwiYXV0aF90aW1lIjoxNTM4NDM1NTUzLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAudXMtZWFzdC0xLmFtYXpvbmF3cy5jb21cL3VzLWVhc3QtMV9DN0hsNWVQYjMiLCJjb2duaXRvOnVzZXJuYW1lIjoiam9uYXNyYm5ldG8iLCJleHAiOjE1Mzg0MzkxNTMsImlhdCI6MTUzODQzNTU1MywiZW1haWwiOiJqb25hcy5yYm5ldG9AZ21haWwuY29tIn0.G7kQAYgIfL27Is81GMwFgProIdiGkhdsVcfiKiCa-hDdyFoQzEPmfVzwSKGuwv2j40EqKGSsWN0mxdRG3_oP-pxQAipW5KhvVNV7ximfrIFcAGd8LnQCiDGlEB0F0096-1W3kA-2N8jcZryUmmJCszkkQ7yWRVVvGKpwPhtaPa1GPXWAjrFsOIBc88g_l8zzfgv24zKVCFjPUpt7KvR_PC5z3QmWVOE0lsR1UVAHLmlYGEM4PB86gwct3FTtnLLPM4efNXd7ty05lf1hVIRqNfpnod1Veg28nZb1Zs2WwgKsG7VG0ulwdMsd5zUxdvhHlFXowwzVTyKtOUAXsQhZLQa
 1 > Connection: Keep-Alive
 1 > Host: udsnzlijn8.execute-api.us-east-1.amazonaws.com
 1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_112)
 
-22:20:48.187 response time in milliseconds: 615
-1 < 401
+20:12:34.060 response time in milliseconds: 659
+1 < 403
 1 < Connection: keep-alive
-1 < Content-Length: 26
+1 < Content-Length: 27
 1 < Content-Type: application/json
-1 < Date: Fri, 28 Sep 2018 01:20:47 GMT
-1 < x-amz-apigw-id: N6E9aGQooAMFiRQ=
-1 < x-amzn-ErrorType: UnauthorizedException
-1 < x-amzn-RequestId: ba8ccd91-c2bc-11e8-8e48-8b9484f992ff
-{"message":"Unauthorized"}
+1 < Date: Mon, 01 Oct 2018 23:12:33 GMT
+1 < x-amz-apigw-id: OG97SGj1oAMFhKQ=
+1 < x-amzn-ErrorType: AccessDeniedException
+1 < x-amzn-RequestId: 7a724035-c5cf-11e8-97c5-3746d0a0c8e7
+{"Message":"Access Denied"}
 
-22:20:48.221 karate.env system property was: null 
-22:20:49.360 request:
+20:12:34.091 karate.env system property was: null 
+20:12:35.190 request:
 1 > POST https://udsnzlijn8.execute-api.us-east-1.amazonaws.com/dev/avengers
 1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Bearer eyJraWQiOiJKbXgrSTI4SlVDOFJNS2NKY3ZROFl0Vm9Ld0NcLzE5ZzNlY05lM3hVSHR3OD0iLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiI5YmZmMjA5NS1kMjczLTRjYTktYjUwMS0yMDJhYmY1YmNjM2EiLCJhdWQiOiI3ZHF2ZG9pcmM0b2FmYzJ1ZGRqYjY0bDdhZSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJldmVudF9pZCI6IjdiMGNmOTkxLWM1Y2YtMTFlOC1hNjhkLWM5ZThmMGExNjBhZiIsInRva2VuX3VzZSI6ImlkIiwiYXV0aF90aW1lIjoxNTM4NDM1NTU0LCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAudXMtZWFzdC0xLmFtYXpvbmF3cy5jb21cL3VzLWVhc3QtMV9DN0hsNWVQYjMiLCJjb2duaXRvOnVzZXJuYW1lIjoiam9uYXNyYm5ldG8iLCJleHAiOjE1Mzg0MzkxNTQsImlhdCI6MTUzODQzNTU1NCwiZW1haWwiOiJqb25hcy5yYm5ldG9AZ21haWwuY29tIn0.cHNCAFpRkfKLjhTEjyxNMHBhW9T_n8Y7pgubMZtDY5U5pyCYJuZ_vpO_BsroDqKXMAoEAdZYEjhWzMcwt9V9i5saJesUixuFNCv_Q88fW_KRefdOvWEqotJvYPi32AkWDwajoDAZZKrmo-Nfskc_9K2Mmr8XvKIH-fEDmC92HzbhtrpgfX9RVCBcYfxlwmxt-1Bukmp2Bb-aRo04E4KzHSkxIzYvkRTdXracL7C_63dgtP-SP0XEhhethdTcynat96ZiFZo8ci6md7S15ptY7vycNl3zlXXc0WTeGGAAWaddIdTx_z9S8o0d4k70S919jT9VcrYx--poULuCemStSg
 1 > Connection: Keep-Alive
 1 > Content-Length: 58
 1 > Content-Type: application/json; charset=UTF-8
@@ -28,40 +30,41 @@
 1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_112)
 {"name":"Captain America","secretIdentity":"Steve Rogers"}
 
-22:20:50.020 response time in milliseconds: 660
+20:12:36.022 response time in milliseconds: 832
 1 < 201
 1 < Connection: keep-alive
 1 < Content-Length: 102
 1 < Content-Type: application/json
-1 < Date: Fri, 28 Sep 2018 01:20:49 GMT
-1 < X-Amzn-Trace-Id: Root=1-5bad81f1-6c8aa42b0e4f917de46ab92b;Sampled=0
-1 < x-amz-apigw-id: N6E9qHrAoAMFWwA=
-1 < x-amzn-RequestId: bb85ac37-c2bc-11e8-a8bf-1f4a0e62bd16
-{"id":"22d16d2e-a3e9-43bd-a12d-8e576293019b","name":"Captain America","secretIdentity":"Steve Rogers"}
+1 < Date: Mon, 01 Oct 2018 23:12:35 GMT
+1 < X-Amzn-Trace-Id: Root=1-5bb2a9e3-7302ba1ce694795cf209ecd8;Sampled=0
+1 < x-amz-apigw-id: OG97iG8xoAMFtwQ=
+1 < x-amzn-RequestId: 7b68fc68-c5cf-11e8-aa7e-b3f3d8db29b2
+{"id":"917072f9-29cc-458b-ba27-ea3fadab0a38","name":"Captain America","secretIdentity":"Steve Rogers"}
 
-22:20:50.036 request:
-2 > GET https://udsnzlijn8.execute-api.us-east-1.amazonaws.com/dev/avengers/22d16d2e-a3e9-43bd-a12d-8e576293019b
+20:12:36.038 request:
+2 > GET https://udsnzlijn8.execute-api.us-east-1.amazonaws.com/dev/avengers/917072f9-29cc-458b-ba27-ea3fadab0a38
 2 > Accept-Encoding: gzip,deflate
-2 > Authorization: Bearer eyJraWQiOiJKbXgrSTI4SlVDOFJNS2NKY3ZROFl0Vm9Ld0NcLzE5ZzNlY05lM3hVSHR3OD0iLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiI5YmZmMjA5NS1kMjczLTRjYTktYjUwMS0yMDJhYmY1YmNjM2EiLCJhdWQiOiI3ZHF2ZG9pcmM0b2FmYzJ1ZGRqYjY0bDdhZSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJldmVudF9pZCI6ImJiMjgyMzZiLWMyYmMtMTFlOC05ZDA3LTgzNzNjZjE3YTNhZSIsInRva2VuX3VzZSI6ImlkIiwiYXV0aF90aW1lIjoxNTM4MDk3NjQ4LCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAudXMtZWFzdC0xLmFtYXpvbmF3cy5jb21cL3VzLWVhc3QtMV9DN0hsNWVQYjMiLCJjb2duaXRvOnVzZXJuYW1lIjoiam9uYXNyYm5ldG8iLCJleHAiOjE1MzgxMDEyNDgsImlhdCI6MTUzODA5NzY0OCwiZW1haWwiOiJqb25hcy5yYm5ldG9AZ21haWwuY29tIn0.Gmg7tz2ukpmCUAnqbfpWHjhX4oE03z2wAcYwSKBMgnb-iVlAJpPyZ-bgiIbBRHcIiJ24e8SmX-uR8aO53AfALWbRebAjJMky16tbpAxbP1lTiwL-DNm4VaDADDs6t7ma_wjX80nSMY93dg3BgTuOagMRXtPZyF6o4GbXbDv_zbXHuGlk1DJM9Pq0sLcbkG6QUesihNxKqr0hAQf0ninRGO8vq2WO4pe_4XBmiyVeTYHIcWXqq3ZW7owrslfp_wQwMCASMZd4eAa5Idkd7VywJifXYenLTAB6yPujK4mWNdlFiWlQFEAxq1jV5W6GfjZALc72UGp53tWdewZRSj9M2Q
+2 > Authorization: Bearer eyJraWQiOiJKbXgrSTI4SlVDOFJNS2NKY3ZROFl0Vm9Ld0NcLzE5ZzNlY05lM3hVSHR3OD0iLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiI5YmZmMjA5NS1kMjczLTRjYTktYjUwMS0yMDJhYmY1YmNjM2EiLCJhdWQiOiI3ZHF2ZG9pcmM0b2FmYzJ1ZGRqYjY0bDdhZSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJldmVudF9pZCI6IjdiMGNmOTkxLWM1Y2YtMTFlOC1hNjhkLWM5ZThmMGExNjBhZiIsInRva2VuX3VzZSI6ImlkIiwiYXV0aF90aW1lIjoxNTM4NDM1NTU0LCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAudXMtZWFzdC0xLmFtYXpvbmF3cy5jb21cL3VzLWVhc3QtMV9DN0hsNWVQYjMiLCJjb2duaXRvOnVzZXJuYW1lIjoiam9uYXNyYm5ldG8iLCJleHAiOjE1Mzg0MzkxNTQsImlhdCI6MTUzODQzNTU1NCwiZW1haWwiOiJqb25hcy5yYm5ldG9AZ21haWwuY29tIn0.cHNCAFpRkfKLjhTEjyxNMHBhW9T_n8Y7pgubMZtDY5U5pyCYJuZ_vpO_BsroDqKXMAoEAdZYEjhWzMcwt9V9i5saJesUixuFNCv_Q88fW_KRefdOvWEqotJvYPi32AkWDwajoDAZZKrmo-Nfskc_9K2Mmr8XvKIH-fEDmC92HzbhtrpgfX9RVCBcYfxlwmxt-1Bukmp2Bb-aRo04E4KzHSkxIzYvkRTdXracL7C_63dgtP-SP0XEhhethdTcynat96ZiFZo8ci6md7S15ptY7vycNl3zlXXc0WTeGGAAWaddIdTx_z9S8o0d4k70S919jT9VcrYx--poULuCemStSg
 2 > Connection: Keep-Alive
 2 > Host: udsnzlijn8.execute-api.us-east-1.amazonaws.com
 2 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_112)
 
-22:20:56.000 response time in milliseconds: 5964
+20:12:36.631 response time in milliseconds: 593
 2 < 200
 2 < Connection: keep-alive
 2 < Content-Length: 102
 2 < Content-Type: application/json
-2 < Date: Fri, 28 Sep 2018 01:20:55 GMT
-2 < X-Amzn-Trace-Id: Root=1-5bad81f1-3ae832bcef56752cc1920a4c;Sampled=0
-2 < x-amz-apigw-id: N6E9xFCKIAMFfyA=
-2 < x-amzn-RequestId: bbecd281-c2bc-11e8-91cc-6f57926d3361
-{"id":"22d16d2e-a3e9-43bd-a12d-8e576293019b","name":"Captain America","secretIdentity":"Steve Rogers"}
+2 < Date: Mon, 01 Oct 2018 23:12:36 GMT
+2 < X-Amzn-Trace-Id: Root=1-5bb2a9e4-2407e0a05da6a6594b036b63;Sampled=0
+2 < x-amz-apigw-id: OG97qHsLIAMFe8w=
+2 < x-amzn-RequestId: 7be99de5-c5cf-11e8-9496-c52e11972779
+{"id":"917072f9-29cc-458b-ba27-ea3fadab0a38","name":"Captain America","secretIdentity":"Steve Rogers"}
 
-22:20:56.007 karate.env system property was: null 
-22:20:57.030 request:
+20:12:36.647 karate.env system property was: null 
+20:12:37.698 request:
 1 > POST https://udsnzlijn8.execute-api.us-east-1.amazonaws.com/dev/avengers
 1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Bearer eyJraWQiOiJKbXgrSTI4SlVDOFJNS2NKY3ZROFl0Vm9Ld0NcLzE5ZzNlY05lM3hVSHR3OD0iLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiI5YmZmMjA5NS1kMjczLTRjYTktYjUwMS0yMDJhYmY1YmNjM2EiLCJhdWQiOiI3ZHF2ZG9pcmM0b2FmYzJ1ZGRqYjY0bDdhZSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJldmVudF9pZCI6IjdjOGUxYjE5LWM1Y2YtMTFlOC1hZmVmLTMzZDc2MDU5NzUxZiIsInRva2VuX3VzZSI6ImlkIiwiYXV0aF90aW1lIjoxNTM4NDM1NTU3LCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAudXMtZWFzdC0xLmFtYXpvbmF3cy5jb21cL3VzLWVhc3QtMV9DN0hsNWVQYjMiLCJjb2duaXRvOnVzZXJuYW1lIjoiam9uYXNyYm5ldG8iLCJleHAiOjE1Mzg0MzkxNTcsImlhdCI6MTUzODQzNTU1NywiZW1haWwiOiJqb25hcy5yYm5ldG9AZ21haWwuY29tIn0.C8tLPsWI8TF7JLvmvb9RJjOhs6kbSirnk64JXKu922_F8NbqqOXy6OufXTw3TKucC86e_80nYiGjTF2Kuug35LP8OKfYUgDDLe1NevKdRrc_gV_isclM32KksH9N3uJBn8zaKWJL_54Sm97zusbdiOzDy0BKS0mJ082SOcKdOFT4ithHe1UrmeH8ID-uLE67aGKfF5T4C__0ErbhF1qfNRsRFD4fiuoOUy_Nhfbokmk5pmbN1Gas951t6bB0zBPq85Mrwlz6TEtmA0ZCvcENACaxUjoW3RCukciFCpsSOagYBWKqlNKt-usze4P9Koor7dbYI6FGbRuQxHK-qOuS3Q
 1 > Connection: Keep-Alive
 1 > Content-Length: 26
 1 > Content-Type: application/json; charset=UTF-8
@@ -69,21 +72,21 @@
 1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_112)
 {"name":"Captain America"}
 
-22:20:57.532 response time in milliseconds: 502
+20:12:38.274 response time in milliseconds: 576
 1 < 400
 1 < Connection: keep-alive
 1 < Content-Length: 35
 1 < Content-Type: application/json
-1 < Date: Fri, 28 Sep 2018 01:20:56 GMT
-1 < x-amz-apigw-id: N6E-3HJGoAMFxkw=
-1 < x-amzn-RequestId: c01c99bd-c2bc-11e8-8b98-3b2acd69203e
+1 < Date: Mon, 01 Oct 2018 23:12:38 GMT
+1 < x-amz-apigw-id: OG977ELiIAMF-uA=
+1 < x-amzn-RequestId: 7cf037fc-c5cf-11e8-a51d-33248d2abf31
 {"message": "Invalid request body"}
 
-22:20:57.532 karate.env system property was: null 
-22:20:58.582 request:
+20:12:38.290 karate.env system property was: null 
+20:12:39.262 request:
 1 > POST https://udsnzlijn8.execute-api.us-east-1.amazonaws.com/dev/avengers
 1 > Accept-Encoding: gzip,deflate
-1 > Authorization: Bearer eyJraWQiOiJKbXgrSTI4SlVDOFJNS2NKY3ZROFl0Vm9Ld0NcLzE5ZzNlY05lM3hVSHR3OD0iLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiI5YmZmMjA5NS1kMjczLTRjYTktYjUwMS0yMDJhYmY1YmNjM2EiLCJhdWQiOiI3ZHF2ZG9pcmM0b2FmYzJ1ZGRqYjY0bDdhZSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJldmVudF9pZCI6ImMwYWNjYjM0LWMyYmMtMTFlOC1hNDA1LWI1NDI3ZWYzZjczYSIsInRva2VuX3VzZSI6ImlkIiwiYXV0aF90aW1lIjoxNTM4MDk3NjU3LCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAudXMtZWFzdC0xLmFtYXpvbmF3cy5jb21cL3VzLWVhc3QtMV9DN0hsNWVQYjMiLCJjb2duaXRvOnVzZXJuYW1lIjoiam9uYXNyYm5ldG8iLCJleHAiOjE1MzgxMDEyNTcsImlhdCI6MTUzODA5NzY1NywiZW1haWwiOiJqb25hcy5yYm5ldG9AZ21haWwuY29tIn0.DJUkomAlatPsfQsMdBRxr20OJVct8f8tXnXYDXOlMwo6hK1PY4hHTHbht7xHyGib-DG1uQAtzAtrrqsm9fuAA9nlKE3brQNHi5Bt-eGJEdqg4HHI4tdqGGi5U34rJZaxFOTZ5k5DAOfkRzOgHmYoQXwy8MlYlvdwg9O3fJ3xuaunGTF5W52tjnMkj3p6EEmK_zOzPfxvDJdBhsrGbYRMk0waf_LCl9SzCK3iQ4pOz5MWJ8LFRUJwKIt5dpOH8HAnnfW_i-N6OVeHCJqxEHGG5HT5QWdOSu8DDW1s5A2wnrpEgGWX0HUXlYxCNr9AKP4vmnNjKzcTBDOfdOU3GgLTzA
+1 > Authorization: Bearer eyJraWQiOiJKbXgrSTI4SlVDOFJNS2NKY3ZROFl0Vm9Ld0NcLzE5ZzNlY05lM3hVSHR3OD0iLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiI5YmZmMjA5NS1kMjczLTRjYTktYjUwMS0yMDJhYmY1YmNjM2EiLCJhdWQiOiI3ZHF2ZG9pcmM0b2FmYzJ1ZGRqYjY0bDdhZSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJldmVudF9pZCI6IjdkN2U2ZWM5LWM1Y2YtMTFlOC05MjBhLTQ1NGRlYWY2YWM3YSIsInRva2VuX3VzZSI6ImlkIiwiYXV0aF90aW1lIjoxNTM4NDM1NTU5LCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAudXMtZWFzdC0xLmFtYXpvbmF3cy5jb21cL3VzLWVhc3QtMV9DN0hsNWVQYjMiLCJjb2duaXRvOnVzZXJuYW1lIjoiam9uYXNyYm5ldG8iLCJleHAiOjE1Mzg0MzkxNTksImlhdCI6MTUzODQzNTU1OSwiZW1haWwiOiJqb25hcy5yYm5ldG9AZ21haWwuY29tIn0.U-9epXz1h-IGedemcLmudgCp1j6EDMZucxfl6aHyZpmMErYexaVkeA9qWA_wrO47E03WIRuzKA_3veDCpIg314TNSA_o4HXQktxYf65fvrRDf1uV42aG6DJ18hxzGui9ZAnuEONw_Wmnys7faoJYfpVf2_8q8knUK1CrjevKvIkUrhVayPOe2IP98qQso43tqdYU7wmHy9gWtno6L_huhMjtFo8l5N59iabMHNkCNC9MycrxQy3a_zoj65MGlICONdEmQlqZ6SKm6sqXdYG4NmECUrN0numcIkDPOGl4Dhs8mlre5pWD4WzH5qjpP_YPsEJiaVp6mm3pFvHBPbd2pQ
 1 > Connection: Keep-Alive
 1 > Content-Length: 47
 1 > Content-Type: application/json; charset=UTF-8
@@ -91,59 +94,59 @@
 1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_112)
 {"name":"Hulk","secretIdentity":"Bruce Banner"}
 
-22:20:59.086 response time in milliseconds: 504
+20:12:39.798 response time in milliseconds: 536
 1 < 201
 1 < Connection: keep-alive
 1 < Content-Length: 91
 1 < Content-Type: application/json
-1 < Date: Fri, 28 Sep 2018 01:20:58 GMT
-1 < X-Amzn-Trace-Id: Root=1-5bad81fa-6dfca168cfe7e9d0ce7da860;Sampled=0
-1 < x-amz-apigw-id: N6E_GHlEIAMFc6A=
-1 < x-amzn-RequestId: c104d6e3-c2bc-11e8-bc1e-6da3fce2f0a4
-{"id":"4b0dce66-acbb-488b-8350-ba58f07e66b9","name":"Hulk","secretIdentity":"Bruce Banner"}
+1 < Date: Mon, 01 Oct 2018 23:12:39 GMT
+1 < X-Amzn-Trace-Id: Root=1-5bb2a9e7-0c452834971fb541f942859a;Sampled=0
+1 < x-amz-apigw-id: OG98KEW6oAMF82g=
+1 < x-amzn-RequestId: 7dd78adc-c5cf-11e8-aa45-db05550b6f72
+{"id":"a56a6c6d-e6b7-4789-a312-0de22aa7d826","name":"Hulk","secretIdentity":"Bruce Banner"}
 
-22:20:59.086 request:
-2 > DELETE https://udsnzlijn8.execute-api.us-east-1.amazonaws.com/dev/avengers/4b0dce66-acbb-488b-8350-ba58f07e66b9
+20:12:39.814 request:
+2 > DELETE https://udsnzlijn8.execute-api.us-east-1.amazonaws.com/dev/avengers/a56a6c6d-e6b7-4789-a312-0de22aa7d826
 2 > Accept-Encoding: gzip,deflate
-2 > Authorization: Bearer eyJraWQiOiJKbXgrSTI4SlVDOFJNS2NKY3ZROFl0Vm9Ld0NcLzE5ZzNlY05lM3hVSHR3OD0iLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiI5YmZmMjA5NS1kMjczLTRjYTktYjUwMS0yMDJhYmY1YmNjM2EiLCJhdWQiOiI3ZHF2ZG9pcmM0b2FmYzJ1ZGRqYjY0bDdhZSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJldmVudF9pZCI6ImMwYWNjYjM0LWMyYmMtMTFlOC1hNDA1LWI1NDI3ZWYzZjczYSIsInRva2VuX3VzZSI6ImlkIiwiYXV0aF90aW1lIjoxNTM4MDk3NjU3LCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAudXMtZWFzdC0xLmFtYXpvbmF3cy5jb21cL3VzLWVhc3QtMV9DN0hsNWVQYjMiLCJjb2duaXRvOnVzZXJuYW1lIjoiam9uYXNyYm5ldG8iLCJleHAiOjE1MzgxMDEyNTcsImlhdCI6MTUzODA5NzY1NywiZW1haWwiOiJqb25hcy5yYm5ldG9AZ21haWwuY29tIn0.DJUkomAlatPsfQsMdBRxr20OJVct8f8tXnXYDXOlMwo6hK1PY4hHTHbht7xHyGib-DG1uQAtzAtrrqsm9fuAA9nlKE3brQNHi5Bt-eGJEdqg4HHI4tdqGGi5U34rJZaxFOTZ5k5DAOfkRzOgHmYoQXwy8MlYlvdwg9O3fJ3xuaunGTF5W52tjnMkj3p6EEmK_zOzPfxvDJdBhsrGbYRMk0waf_LCl9SzCK3iQ4pOz5MWJ8LFRUJwKIt5dpOH8HAnnfW_i-N6OVeHCJqxEHGG5HT5QWdOSu8DDW1s5A2wnrpEgGWX0HUXlYxCNr9AKP4vmnNjKzcTBDOfdOU3GgLTzA
+2 > Authorization: Bearer eyJraWQiOiJKbXgrSTI4SlVDOFJNS2NKY3ZROFl0Vm9Ld0NcLzE5ZzNlY05lM3hVSHR3OD0iLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiI5YmZmMjA5NS1kMjczLTRjYTktYjUwMS0yMDJhYmY1YmNjM2EiLCJhdWQiOiI3ZHF2ZG9pcmM0b2FmYzJ1ZGRqYjY0bDdhZSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJldmVudF9pZCI6IjdkN2U2ZWM5LWM1Y2YtMTFlOC05MjBhLTQ1NGRlYWY2YWM3YSIsInRva2VuX3VzZSI6ImlkIiwiYXV0aF90aW1lIjoxNTM4NDM1NTU5LCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAudXMtZWFzdC0xLmFtYXpvbmF3cy5jb21cL3VzLWVhc3QtMV9DN0hsNWVQYjMiLCJjb2duaXRvOnVzZXJuYW1lIjoiam9uYXNyYm5ldG8iLCJleHAiOjE1Mzg0MzkxNTksImlhdCI6MTUzODQzNTU1OSwiZW1haWwiOiJqb25hcy5yYm5ldG9AZ21haWwuY29tIn0.U-9epXz1h-IGedemcLmudgCp1j6EDMZucxfl6aHyZpmMErYexaVkeA9qWA_wrO47E03WIRuzKA_3veDCpIg314TNSA_o4HXQktxYf65fvrRDf1uV42aG6DJ18hxzGui9ZAnuEONw_Wmnys7faoJYfpVf2_8q8knUK1CrjevKvIkUrhVayPOe2IP98qQso43tqdYU7wmHy9gWtno6L_huhMjtFo8l5N59iabMHNkCNC9MycrxQy3a_zoj65MGlICONdEmQlqZ6SKm6sqXdYG4NmECUrN0numcIkDPOGl4Dhs8mlre5pWD4WzH5qjpP_YPsEJiaVp6mm3pFvHBPbd2pQ
 2 > Connection: Keep-Alive
 2 > Host: udsnzlijn8.execute-api.us-east-1.amazonaws.com
 2 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_112)
 
-22:21:04.843 response time in milliseconds: 5757
+20:12:40.439 response time in milliseconds: 625
 2 < 204
 2 < Connection: keep-alive
 2 < Content-Length: 0
 2 < Content-Type: application/json
-2 < Date: Fri, 28 Sep 2018 01:21:04 GMT
-2 < X-Amzn-Trace-Id: Root=1-5bad81fa-a98fab70c9a376c095cd6b94;Sampled=0
-2 < x-amz-apigw-id: N6E_MEJCoAMFe2Q=
-2 < x-amzn-RequestId: c1558ef9-c2bc-11e8-804f-27d62722c56e
+2 < Date: Mon, 01 Oct 2018 23:12:40 GMT
+2 < X-Amzn-Trace-Id: Root=1-5bb2a9e8-3a3a16f75362d90129f64ca7;Sampled=0
+2 < x-amz-apigw-id: OG98QFCAoAMFQSQ=
+2 < x-amzn-RequestId: 7e27a6a6-c5cf-11e8-ba14-efded63e3f07
 
-22:21:04.847 request:
-3 > GET https://udsnzlijn8.execute-api.us-east-1.amazonaws.com/dev/avengers/4b0dce66-acbb-488b-8350-ba58f07e66b9
+20:12:40.442 request:
+3 > GET https://udsnzlijn8.execute-api.us-east-1.amazonaws.com/dev/avengers/a56a6c6d-e6b7-4789-a312-0de22aa7d826
 3 > Accept-Encoding: gzip,deflate
-3 > Authorization: Bearer eyJraWQiOiJKbXgrSTI4SlVDOFJNS2NKY3ZROFl0Vm9Ld0NcLzE5ZzNlY05lM3hVSHR3OD0iLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiI5YmZmMjA5NS1kMjczLTRjYTktYjUwMS0yMDJhYmY1YmNjM2EiLCJhdWQiOiI3ZHF2ZG9pcmM0b2FmYzJ1ZGRqYjY0bDdhZSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJldmVudF9pZCI6ImMwYWNjYjM0LWMyYmMtMTFlOC1hNDA1LWI1NDI3ZWYzZjczYSIsInRva2VuX3VzZSI6ImlkIiwiYXV0aF90aW1lIjoxNTM4MDk3NjU3LCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAudXMtZWFzdC0xLmFtYXpvbmF3cy5jb21cL3VzLWVhc3QtMV9DN0hsNWVQYjMiLCJjb2duaXRvOnVzZXJuYW1lIjoiam9uYXNyYm5ldG8iLCJleHAiOjE1MzgxMDEyNTcsImlhdCI6MTUzODA5NzY1NywiZW1haWwiOiJqb25hcy5yYm5ldG9AZ21haWwuY29tIn0.DJUkomAlatPsfQsMdBRxr20OJVct8f8tXnXYDXOlMwo6hK1PY4hHTHbht7xHyGib-DG1uQAtzAtrrqsm9fuAA9nlKE3brQNHi5Bt-eGJEdqg4HHI4tdqGGi5U34rJZaxFOTZ5k5DAOfkRzOgHmYoQXwy8MlYlvdwg9O3fJ3xuaunGTF5W52tjnMkj3p6EEmK_zOzPfxvDJdBhsrGbYRMk0waf_LCl9SzCK3iQ4pOz5MWJ8LFRUJwKIt5dpOH8HAnnfW_i-N6OVeHCJqxEHGG5HT5QWdOSu8DDW1s5A2wnrpEgGWX0HUXlYxCNr9AKP4vmnNjKzcTBDOfdOU3GgLTzA
+3 > Authorization: Bearer eyJraWQiOiJKbXgrSTI4SlVDOFJNS2NKY3ZROFl0Vm9Ld0NcLzE5ZzNlY05lM3hVSHR3OD0iLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiI5YmZmMjA5NS1kMjczLTRjYTktYjUwMS0yMDJhYmY1YmNjM2EiLCJhdWQiOiI3ZHF2ZG9pcmM0b2FmYzJ1ZGRqYjY0bDdhZSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJldmVudF9pZCI6IjdkN2U2ZWM5LWM1Y2YtMTFlOC05MjBhLTQ1NGRlYWY2YWM3YSIsInRva2VuX3VzZSI6ImlkIiwiYXV0aF90aW1lIjoxNTM4NDM1NTU5LCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAudXMtZWFzdC0xLmFtYXpvbmF3cy5jb21cL3VzLWVhc3QtMV9DN0hsNWVQYjMiLCJjb2duaXRvOnVzZXJuYW1lIjoiam9uYXNyYm5ldG8iLCJleHAiOjE1Mzg0MzkxNTksImlhdCI6MTUzODQzNTU1OSwiZW1haWwiOiJqb25hcy5yYm5ldG9AZ21haWwuY29tIn0.U-9epXz1h-IGedemcLmudgCp1j6EDMZucxfl6aHyZpmMErYexaVkeA9qWA_wrO47E03WIRuzKA_3veDCpIg314TNSA_o4HXQktxYf65fvrRDf1uV42aG6DJ18hxzGui9ZAnuEONw_Wmnys7faoJYfpVf2_8q8knUK1CrjevKvIkUrhVayPOe2IP98qQso43tqdYU7wmHy9gWtno6L_huhMjtFo8l5N59iabMHNkCNC9MycrxQy3a_zoj65MGlICONdEmQlqZ6SKm6sqXdYG4NmECUrN0numcIkDPOGl4Dhs8mlre5pWD4WzH5qjpP_YPsEJiaVp6mm3pFvHBPbd2pQ
 3 > Connection: Keep-Alive
 3 > Host: udsnzlijn8.execute-api.us-east-1.amazonaws.com
 3 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_112)
 
-22:21:05.858 response time in milliseconds: 995
+20:12:40.941 response time in milliseconds: 498
 3 < 404
 3 < Connection: keep-alive
 3 < Content-Length: 329
 3 < Content-Type: application/json
-3 < Date: Fri, 28 Sep 2018 01:21:05 GMT
-3 < X-Amzn-Trace-Id: Root=1-5bad8200-072a49d6a29cb164fe0e9ff2;Sampled=0
-3 < x-amz-apigw-id: N6FAFHhuIAMFQCw=
-3 < x-amzn-RequestId: c4c2c8f8-c2bc-11e8-bf75-c9d3b9ffe620
-{"errorMessage":"[NotFound] Avenger id 4b0dce66-acbb-488b-8350-ba58f07e66b9","errorType":"com.iwe.avengers.exception.AvengerNotFoundException","stackTrace":["com.iwe.avengers.SearchAvengersHandler.handleRequest(SearchAvengersHandler.java:22)","com.iwe.avengers.SearchAvengersHandler.handleRequest(SearchAvengersHandler.java:1)"]}
+3 < Date: Mon, 01 Oct 2018 23:12:40 GMT
+3 < X-Amzn-Trace-Id: Root=1-5bb2a9e8-7250e5aa996d928c24c2a4ea;Sampled=0
+3 < x-amz-apigw-id: OG98WFEWoAMFQSQ=
+3 < x-amzn-RequestId: 7e8a87cf-c5cf-11e8-ba14-efded63e3f07
+{"errorMessage":"[NotFound] Avenger id a56a6c6d-e6b7-4789-a312-0de22aa7d826","errorType":"com.iwe.avengers.exception.AvengerNotFoundException","stackTrace":["com.iwe.avengers.SearchAvengersHandler.handleRequest(SearchAvengersHandler.java:22)","com.iwe.avengers.SearchAvengersHandler.handleRequest(SearchAvengersHandler.java:1)"]}
 
-22:21:05.860 karate.env system property was: null 
-22:21:06.860 request:
+20:12:40.951 karate.env system property was: null 
+20:12:42.030 request:
 1 > POST https://udsnzlijn8.execute-api.us-east-1.amazonaws.com/dev/avengers
 1 > Accept-Encoding: gzip,deflate
-1 > Authorization: Bearer eyJraWQiOiJKbXgrSTI4SlVDOFJNS2NKY3ZROFl0Vm9Ld0NcLzE5ZzNlY05lM3hVSHR3OD0iLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiI5YmZmMjA5NS1kMjczLTRjYTktYjUwMS0yMDJhYmY1YmNjM2EiLCJhdWQiOiI3ZHF2ZG9pcmM0b2FmYzJ1ZGRqYjY0bDdhZSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJldmVudF9pZCI6ImM1OWRjMDI2LWMyYmMtMTFlOC1iZDhmLWYxYTVmMjlkZTYwNSIsInRva2VuX3VzZSI6ImlkIiwiYXV0aF90aW1lIjoxNTM4MDk3NjY2LCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAudXMtZWFzdC0xLmFtYXpvbmF3cy5jb21cL3VzLWVhc3QtMV9DN0hsNWVQYjMiLCJjb2duaXRvOnVzZXJuYW1lIjoiam9uYXNyYm5ldG8iLCJleHAiOjE1MzgxMDEyNjYsImlhdCI6MTUzODA5NzY2NiwiZW1haWwiOiJqb25hcy5yYm5ldG9AZ21haWwuY29tIn0.F614F863PAHUu1KLHwbtZyHhE2diDVOOxelfQ88uOJjKoNF_0-pF8i-QRnfLfmzvtpzn_zGw81wEZbV20T6O8tyDdTInMX_FoRxhqcDV7iSFuNC7Hcu8TjyU6k8PYfxy-MoJXM5gkCpfim35iT4JX1bJD_9vv9-1Tdww8TzQas0QEDxA_bULzOEuPzoLaZ_MM4sqwyvayluC_IT-FOyxEm75jmJVH94NJ7i5a-mJY02hm9m4gYh0eQ7hQYNRKDh_cQRX09rsmPO0E83Hi5l6hYJaj9rNaB45tbrzfR3UTDCvkSb_scQjBWvwc9HX3GAShsAFmT_s3qDWfC-araVnEA
+1 > Authorization: Bearer eyJraWQiOiJKbXgrSTI4SlVDOFJNS2NKY3ZROFl0Vm9Ld0NcLzE5ZzNlY05lM3hVSHR3OD0iLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiI5YmZmMjA5NS1kMjczLTRjYTktYjUwMS0yMDJhYmY1YmNjM2EiLCJhdWQiOiI3ZHF2ZG9pcmM0b2FmYzJ1ZGRqYjY0bDdhZSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJldmVudF9pZCI6IjdmMjAxMDdkLWM1Y2YtMTFlOC04M2U2LTM3NGZlMzU5YzNlZCIsInRva2VuX3VzZSI6ImlkIiwiYXV0aF90aW1lIjoxNTM4NDM1NTYxLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAudXMtZWFzdC0xLmFtYXpvbmF3cy5jb21cL3VzLWVhc3QtMV9DN0hsNWVQYjMiLCJjb2duaXRvOnVzZXJuYW1lIjoiam9uYXNyYm5ldG8iLCJleHAiOjE1Mzg0MzkxNjEsImlhdCI6MTUzODQzNTU2MSwiZW1haWwiOiJqb25hcy5yYm5ldG9AZ21haWwuY29tIn0.I4LKD-j38lVz_sy0nuH2qm9Q0t7VG-z6t0iTeEv8lK4YXCkKpNM7B7k1tLhlq_6YCPUMOI3OzVRK06PCFtEk_--J4nWF4uuxHj-KD2leZpEpvq-8wTFNjC8fXEBi5-KcCnsRIdRR89ti_ggOhS1h1TJcuIs_bF_r3_dJ0DN0GAaHRsc0n-kLNa8L96GDyoIXlPxEXLDXH-V65Y7MGTrnfUGjKeBTwYFHo_NU6gO6taVH9RnzzwIczuht14kEhY_g3iUmptdKY2mYHnWEeAbbHjLsDpxoUt4C2gRXnSHhVL2pvZl_zl-IuvXLr1pydHc1fnH0LTzFgJcFrTwp3lOpbQ
 1 > Connection: Keep-Alive
 1 > Content-Length: 43
 1 > Content-Type: application/json; charset=UTF-8
@@ -151,21 +154,21 @@
 1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_112)
 {"name":"Captain","secretIdentity":"Steve"}
 
-22:21:07.422 response time in milliseconds: 562
+20:12:42.539 response time in milliseconds: 509
 1 < 201
 1 < Connection: keep-alive
 1 < Content-Length: 87
 1 < Content-Type: application/json
-1 < Date: Fri, 28 Sep 2018 01:21:06 GMT
-1 < X-Amzn-Trace-Id: Root=1-5bad8202-286dd2f0d766cc6dd8d6643c;Sampled=0
-1 < x-amz-apigw-id: N6FAZEIAIAMFipw=
-1 < x-amzn-RequestId: c5f9e98b-c2bc-11e8-8527-69332a9a4d97
-{"id":"208c49ae-8392-4f60-840d-cc8d8d0e9814","name":"Captain","secretIdentity":"Steve"}
+1 < Date: Mon, 01 Oct 2018 23:12:42 GMT
+1 < X-Amzn-Trace-Id: Root=1-5bb2a9ea-6d1438dc9cc386342cd43eac;Sampled=0
+1 < x-amz-apigw-id: OG98mH3bIAMFp-Q=
+1 < x-amzn-RequestId: 7f7cd72b-c5cf-11e8-8230-9d221cbf6d6a
+{"id":"1112ce5e-80c3-4260-9505-d947526e36e6","name":"Captain","secretIdentity":"Steve"}
 
-22:21:07.422 request:
-2 > PUT https://udsnzlijn8.execute-api.us-east-1.amazonaws.com/dev/avengers/208c49ae-8392-4f60-840d-cc8d8d0e9814
+20:12:42.539 request:
+2 > PUT https://udsnzlijn8.execute-api.us-east-1.amazonaws.com/dev/avengers/1112ce5e-80c3-4260-9505-d947526e36e6
 2 > Accept-Encoding: gzip,deflate
-2 > Authorization: Bearer eyJraWQiOiJKbXgrSTI4SlVDOFJNS2NKY3ZROFl0Vm9Ld0NcLzE5ZzNlY05lM3hVSHR3OD0iLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiI5YmZmMjA5NS1kMjczLTRjYTktYjUwMS0yMDJhYmY1YmNjM2EiLCJhdWQiOiI3ZHF2ZG9pcmM0b2FmYzJ1ZGRqYjY0bDdhZSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJldmVudF9pZCI6ImM1OWRjMDI2LWMyYmMtMTFlOC1iZDhmLWYxYTVmMjlkZTYwNSIsInRva2VuX3VzZSI6ImlkIiwiYXV0aF90aW1lIjoxNTM4MDk3NjY2LCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAudXMtZWFzdC0xLmFtYXpvbmF3cy5jb21cL3VzLWVhc3QtMV9DN0hsNWVQYjMiLCJjb2duaXRvOnVzZXJuYW1lIjoiam9uYXNyYm5ldG8iLCJleHAiOjE1MzgxMDEyNjYsImlhdCI6MTUzODA5NzY2NiwiZW1haWwiOiJqb25hcy5yYm5ldG9AZ21haWwuY29tIn0.F614F863PAHUu1KLHwbtZyHhE2diDVOOxelfQ88uOJjKoNF_0-pF8i-QRnfLfmzvtpzn_zGw81wEZbV20T6O8tyDdTInMX_FoRxhqcDV7iSFuNC7Hcu8TjyU6k8PYfxy-MoJXM5gkCpfim35iT4JX1bJD_9vv9-1Tdww8TzQas0QEDxA_bULzOEuPzoLaZ_MM4sqwyvayluC_IT-FOyxEm75jmJVH94NJ7i5a-mJY02hm9m4gYh0eQ7hQYNRKDh_cQRX09rsmPO0E83Hi5l6hYJaj9rNaB45tbrzfR3UTDCvkSb_scQjBWvwc9HX3GAShsAFmT_s3qDWfC-araVnEA
+2 > Authorization: Bearer eyJraWQiOiJKbXgrSTI4SlVDOFJNS2NKY3ZROFl0Vm9Ld0NcLzE5ZzNlY05lM3hVSHR3OD0iLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiI5YmZmMjA5NS1kMjczLTRjYTktYjUwMS0yMDJhYmY1YmNjM2EiLCJhdWQiOiI3ZHF2ZG9pcmM0b2FmYzJ1ZGRqYjY0bDdhZSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJldmVudF9pZCI6IjdmMjAxMDdkLWM1Y2YtMTFlOC04M2U2LTM3NGZlMzU5YzNlZCIsInRva2VuX3VzZSI6ImlkIiwiYXV0aF90aW1lIjoxNTM4NDM1NTYxLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAudXMtZWFzdC0xLmFtYXpvbmF3cy5jb21cL3VzLWVhc3QtMV9DN0hsNWVQYjMiLCJjb2duaXRvOnVzZXJuYW1lIjoiam9uYXNyYm5ldG8iLCJleHAiOjE1Mzg0MzkxNjEsImlhdCI6MTUzODQzNTU2MSwiZW1haWwiOiJqb25hcy5yYm5ldG9AZ21haWwuY29tIn0.I4LKD-j38lVz_sy0nuH2qm9Q0t7VG-z6t0iTeEv8lK4YXCkKpNM7B7k1tLhlq_6YCPUMOI3OzVRK06PCFtEk_--J4nWF4uuxHj-KD2leZpEpvq-8wTFNjC8fXEBi5-KcCnsRIdRR89ti_ggOhS1h1TJcuIs_bF_r3_dJ0DN0GAaHRsc0n-kLNa8L96GDyoIXlPxEXLDXH-V65Y7MGTrnfUGjKeBTwYFHo_NU6gO6taVH9RnzzwIczuht14kEhY_g3iUmptdKY2mYHnWEeAbbHjLsDpxoUt4C2gRXnSHhVL2pvZl_zl-IuvXLr1pydHc1fnH0LTzFgJcFrTwp3lOpbQ
 2 > Connection: Keep-Alive
 2 > Content-Length: 58
 2 > Content-Type: application/json; charset=UTF-8
@@ -173,21 +176,22 @@
 2 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_112)
 {"name":"Captain America","secretIdentity":"Steve Rogers"}
 
-22:21:13.798 response time in milliseconds: 6376
+20:12:43.192 response time in milliseconds: 653
 2 < 200
 2 < Connection: keep-alive
 2 < Content-Length: 102
 2 < Content-Type: application/json
-2 < Date: Fri, 28 Sep 2018 01:21:13 GMT
-2 < X-Amzn-Trace-Id: Root=1-5bad8203-8e96fc54d86220f866ea014c;Sampled=0
-2 < x-amz-apigw-id: N6FAfGmKoAMFtbQ=
-2 < x-amzn-RequestId: c64b1749-c2bc-11e8-8428-e55565cda65e
-{"id":"208c49ae-8392-4f60-840d-cc8d8d0e9814","name":"Captain America","secretIdentity":"Steve Rogers"}
+2 < Date: Mon, 01 Oct 2018 23:12:42 GMT
+2 < X-Amzn-Trace-Id: Root=1-5bb2a9ea-1de8c86ecd1cb59794afded5;Sampled=0
+2 < x-amz-apigw-id: OG98rFjQIAMFzyw=
+2 < x-amzn-RequestId: 7fc921f2-c5cf-11e8-a7ff-43ea5e16285a
+{"id":"1112ce5e-80c3-4260-9505-d947526e36e6","name":"Captain America","secretIdentity":"Steve Rogers"}
 
-22:21:13.809 karate.env system property was: null 
-22:21:14.859 request:
+20:12:43.210 karate.env system property was: null 
+20:12:44.233 request:
 1 > PUT https://udsnzlijn8.execute-api.us-east-1.amazonaws.com/dev/avengers/aaaa-bbbb-cccc-dddd
 1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Bearer eyJraWQiOiJKbXgrSTI4SlVDOFJNS2NKY3ZROFl0Vm9Ld0NcLzE5ZzNlY05lM3hVSHR3OD0iLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiI5YmZmMjA5NS1kMjczLTRjYTktYjUwMS0yMDJhYmY1YmNjM2EiLCJhdWQiOiI3ZHF2ZG9pcmM0b2FmYzJ1ZGRqYjY0bDdhZSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJldmVudF9pZCI6IjgwNzJjZmU4LWM1Y2YtMTFlOC1hM2I0LTliZDkwZGNhMjQwNCIsInRva2VuX3VzZSI6ImlkIiwiYXV0aF90aW1lIjoxNTM4NDM1NTYzLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAudXMtZWFzdC0xLmFtYXpvbmF3cy5jb21cL3VzLWVhc3QtMV9DN0hsNWVQYjMiLCJjb2duaXRvOnVzZXJuYW1lIjoiam9uYXNyYm5ldG8iLCJleHAiOjE1Mzg0MzkxNjMsImlhdCI6MTUzODQzNTU2MywiZW1haWwiOiJqb25hcy5yYm5ldG9AZ21haWwuY29tIn0.ZKIAHeWbzDlRprXLIALTlxuDga-wlKecxhp2HbNrLgQH8YPsh1Sruvn5WZIVi2fLDSCsoScZ9PXOZETd8-Ky9ZzbiZR2vDkimxfG95tdXdiYGTEhVnDlZvm4jemgNa5lIsXAo_zXvz1ymvc2MW8eNf8-7O8ZtQLHrCEspnI5pT0lAYMP2PuUrdFtLmckJ__8QeqoJS8Bva3v8F-ue2g9E6t7AKWiIvtz-Uq9YGKza5rnWP8JMCop53FperNzGSylE7N566CS_nSLwygKjEzO80OEch8ZMbDeapdOJJPl4exNYtzH5QDr2CqQTiie056S5amuqFDgLlyhuz-cuKr0Tg
 1 > Connection: Keep-Alive
 1 > Content-Length: 15
 1 > Content-Type: application/json; charset=UTF-8
@@ -195,77 +199,17 @@
 1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_112)
 {"name":"Hulk"}
 
-22:21:15.375 response time in milliseconds: 516
+20:12:44.690 response time in milliseconds: 457
 1 < 400
 1 < Connection: keep-alive
 1 < Content-Length: 35
 1 < Content-Type: application/json
-1 < Date: Fri, 28 Sep 2018 01:21:14 GMT
-1 < x-amz-apigw-id: N6FBpFp7IAMFzDw=
-1 < x-amzn-RequestId: cabe015b-c2bc-11e8-95f7-6b81e6eaa096
+1 < Date: Mon, 01 Oct 2018 23:12:44 GMT
+1 < x-amz-apigw-id: OG988Et9oAMFvPA=
+1 < x-amzn-RequestId: 80c9f00a-c5cf-11e8-9632-7d72d992944e
 {"message": "Invalid request body"}
 
-ss" href="https://i.annihil.us/u/prod/marvel/html_blocks_assets/error-pages/terrigen/prod/css/main-81ea9ddd1e.css">
-    <script src="https://i.annihil.us/u/prod/marvel/i/js/jquery-3.3.1.min.js"></script>
-</head>
-
-<body class="error-status-page">
-    <!-- This is an Apache served error page for status code: 404 -->
-    <header class="static-header">
-        <nav>
-            <div class="upper-nav">
-                <ol>
-                    <li class="signin">
-                        <a href="https://www.marvel.com/signin">
-                            <svg class="desktop-signin" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 65.6 66.7"><path fill-rule="evenodd" d="M59.5 15.1L53 51.4c0 .4-.3.6-.6.6h-6.5c-.3 0-.6-.2-.8-.6l-8.8-24.7H36l-4.3 24.7c-.1.3-.3.6-.6.6H25c-.3 0-.6-.2-.5-.6l6.6-37.3c.1-.3.3-.6.6-.6h6.4c.5 0 .7.2.8.6l8.8 24.7h.3l5.5-30.4C47.9 3.7 40.6.9 32.7.9 14.7.9.2 15.5.2 33.4c0 8.8 3.5 16.7 9.1 22.5l7.3-41.7c.1-.3.3-.6.6-.6H24c.3 0 .5.2.5.6l-8.3 47.2c4.8 2.8 10.4 4.5 16.4 4.5 17.9 0 32.5-14.5 32.5-32.5 0-6.8-2.1-13.1-5.6-18.3z"></path></svg>
-                            <svg class="mobile-signin" xmlns="http://www.w3.org/2000/svg" width="24" height="16" viewBox="0 0 24 16"><g fill-rule="evenodd"><path d="M0 14h24v2H0zM0 8h24v2H0zM0 2h24v2H0z"></path></g></svg>
-                            <span>Sign In</span></a>
-                    
-                    </li>
-                    <a id="marvel-logo" href="https://www.marvel.com"></a>
-                    <li class="search">
-                        <a href="https://www.marvel.com/search"><svg xmlns="http://www.w3.org/2000/svg" width="19" height="17" viewBox="0 0 19 17"><g fill-rule="evenodd" stroke-width="2"><circle cx="6.5" cy="6.5" r="5.5"></circle><path d="M14 14l3.536 3.536"></path></g></svg></a>
-                    </li>
-                </ol>
-            </div>
-            <div class="lower-nav">
-                <ol>
-                    <a href="https://www.marvel.com/watch"><li>Watch</li></a>
-                    <a href="https://www.marvel.com/explore"><li>Explore</li></a>
-                    <a href="https://www.marvel.com/comics"><li>Read</li></a>
-                    <a href="https://www.marvel.com/movies"><li>Movies</li></a>
-                    <a href="https://www.marvel.com/tv-shows"><li>TV</li></a>
-                    <a href="https://www.marvel.com/games"><li>Games</li></a>
-                    <a href="https://www.marvel.com/podcasts"><li>Podcasts</li></a>
-                    <a href="https://shop.marvel.com"><li>Shop</li></a>
-                </ol>
-            </div>
-        </nav>
-        <link href="https://i.annihil.us/u/prod/marvel/html_blocks_assets/error-pages/static/top-nav-static.css" rel="stylesheet" />
-    </header>
-    <section id="error-status" class="error-status" data-state="1">
-        <div class="overlay"></div>
-        <div class="flex-wrapper no-pad">
-            <div class="flex-col">
-                <div class="error-copy">
-                    <h1>404 Page Not Found</h1>
-                    <h6></h6>
-                    <p>Check that you typed the address correctly, go back to your previous page or try using our site search
-                        to find something specific.</p>
-                </div>
-            </div>
-            <div class="flex-col toAnimate no-pad">
-                <div class="error-image-animate"></div>
-            </div>
-        </div>
-        <script src="https://i.annihil.us/u/prod/marvel/html_blocks_assets/error-pages/terrigen/prod/js/main-ec0b804c01.js"></script>
-    </section>
-    <footer class="static-footer">
-        <nav>
-            <ol>
-                <a href="https://disneytermsofuse.com/">Terms of Use</a>
-                <a href="https://disneyprivacycenter.com/">Privacy Policy</a>
-                <a href="https://disneyprivacycenter.com/notice-to-california-residents">Your California Privacy Rights</a>
+acycenter.com/notice-to-california-residents">Your California Privacy Rights</a>
                 <a href="https://disneyprivacycenter.com/kids-privacy-policy/english/">Children's Online Privacy Policy</a>
             </ol>
             <ol>
